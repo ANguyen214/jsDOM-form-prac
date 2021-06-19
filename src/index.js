@@ -23,10 +23,8 @@ const formSubmitHandler = (event) => {
     findArticle.forEach((articles) => {
         if(!articles.innerHTML.toLowerCase().includes(formData.get("searchTerm").toLowerCase())) {
             articles.classList.add("hidden");
-        } else {
-            articles.classList.remove("hidden");
-        }
-    })
+        } 
+    });
 }
 
 function validateExists(value) {
